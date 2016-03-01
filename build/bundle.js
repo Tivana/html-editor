@@ -19756,7 +19756,7 @@
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Editor).call(this, props));
 
 	    _this.state = {
-	      value: localS == "" ? initialSource : localS
+	      value: typeof localS != "undefined" ? initialSource : localS
 	    };
 
 	    return _this;

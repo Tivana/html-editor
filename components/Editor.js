@@ -16,7 +16,7 @@ export default class Editor extends Component{
     var localS = localStorage.getItem("token");
     super(props);
     this.state = {
-      value: localS == "" ? initialSource : localS
+      value: typeof localS != "undefined" ? initialSource : localS
     }
 
   }
